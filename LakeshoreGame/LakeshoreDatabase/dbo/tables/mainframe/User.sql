@@ -9,7 +9,7 @@
 	[CreatedDate] datetime,
 	[ModifiedDate] datetime,
 	[DeletedDate] datetime,
-	[IsDeleted] bit
+	[IsDeleted] bit 
     CONSTRAINT [PK_User] PRIMARY KEY ([Id]) 
 )
 

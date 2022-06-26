@@ -22,7 +22,7 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
-    <IncludeSchemaNameInFileName>True</IncludeSchemaNameInFileName>
+    <IncludeSchemaNameInFileName>False</IncludeSchemaNameInFileName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -60,14 +60,19 @@
     <Folder Include="dbo" />
     <Folder Include="dbo\schemas" />
     <Folder Include="dbo\tables" />
-    <Folder Include="dbo\views" />
     <Folder Include="dbo\stored procedures" />
+    <Folder Include="dbo\tables\mainframe" />
+    <Folder Include="dbo\stored procedures\mainframe" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\schemas\mainframe.sql" />
-    <Build Include="dbo\tables\dbo.User.sql" />
-    <Build Include="dbo\views\dbo.vw_Active_User.sql" />
-    <Build Include="dbo\views\dbo.vw_Deleted_User.sql" />
-    <Build Include="dbo\stored procedures\dbo.sp_SelectAll_User.sql" />
+    <Build Include="dbo\tables\mainframe\Email.sql" />
+    <Build Include="dbo\tables\mainframe\Modul.sql" />
+    <Build Include="dbo\tables\mainframe\Option.sql" />
+    <Build Include="dbo\tables\mainframe\QuickMessage.sql" />
+    <Build Include="dbo\tables\mainframe\User.sql" />
+    <Build Include="dbo\tables\mainframe\User_Moduls.sql" />
+    <Build Include="dbo\tables\mainframe\User_Options.sql" />
+    <Build Include="dbo\stored procedures\mainframe\sp_SelectAll_User.sql" />
   </ItemGroup>
 </Project>
