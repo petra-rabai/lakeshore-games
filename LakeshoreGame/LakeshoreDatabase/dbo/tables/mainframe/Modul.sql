@@ -2,6 +2,11 @@
 (
 	[Id] INT NOT NULL IDENTITY, 
 	[Type] varchar(200),
-	[Name] varchar(300)
-    CONSTRAINT [PK_Modul] PRIMARY KEY ([Id]) 
+	[Name] varchar(300),
+	[IsActive] BIT NULL,
+	[ActivationDate] DATETIME NULL,
+	[InActivationDate] DATETIME NULL
+    CONSTRAINT [PK_Modul] PRIMARY KEY ([Id]), 
+   
+    
 )

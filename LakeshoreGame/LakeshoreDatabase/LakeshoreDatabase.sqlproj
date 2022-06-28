@@ -71,8 +71,6 @@
     <Build Include="dbo\tables\mainframe\Option.sql" />
     <Build Include="dbo\tables\mainframe\QuickMessage.sql" />
     <Build Include="dbo\tables\mainframe\User.sql" />
-    <Build Include="dbo\tables\mainframe\User_Moduls.sql" />
-    <Build Include="dbo\tables\mainframe\User_Options.sql" />
     <Build Include="dbo\stored procedures\mainframe\sp_SelectAll_User.sql" />
   </ItemGroup>
 </Project>
