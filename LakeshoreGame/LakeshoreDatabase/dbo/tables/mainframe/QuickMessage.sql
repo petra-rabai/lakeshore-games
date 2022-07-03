@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[QuickMessage]
+﻿CREATE TABLE [mainframe].[QuickMessage]
 (
 	[Id] INT NOT NULL IDENTITY,
 	[SenderId] int,
