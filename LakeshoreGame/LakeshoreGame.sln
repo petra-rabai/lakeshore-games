@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.2.32616.157
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32602.291
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LakeshoreDatabase", "LakeshoreDatabase\LakeshoreDatabase.sqlproj", "{81F52954-090F-45C3-80E8-D511010E35BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.InstallationLibrary", "LakeshoreGame_Installation\Game.InstallationLibrary.csproj", "{402D4CAE-179A-456C-8F32-57479537F79C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,6 +19,10 @@ Global
 		{81F52954-090F-45C3-80E8-D511010E35BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81F52954-090F-45C3-80E8-D511010E35BE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{81F52954-090F-45C3-80E8-D511010E35BE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{402D4CAE-179A-456C-8F32-57479537F79C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{402D4CAE-179A-456C-8F32-57479537F79C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{402D4CAE-179A-456C-8F32-57479537F79C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{402D4CAE-179A-456C-8F32-57479537F79C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
