@@ -34,7 +34,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.IO.Abstractions, Version=17.0.0.0, Culture=neutral, PublicKeyToken=96bf224d23c43e59, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.IO.Abstractions.17.0.18\lib\net461\System.IO.Abstractions.dll</HintPath>
+      <HintPath>..\packages\System.IO.Abstractions.17.0.21\lib\net461\System.IO.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -45,7 +45,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Installation.cs" />
-    <Compile Include="Location\Enums\FolderTypes.cs" />
     <Compile Include="Location\FolderHandler.cs" />
     <Compile Include="Location\Models\Drive.cs" />
     <Compile Include="Location\DriveHandler.cs" />
@@ -58,6 +57,5 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

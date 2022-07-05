@@ -38,7 +38,7 @@ namespace Game.InstallationLibrary.Location
 
 			foreach (IDriveInfo driveItem in _driveInfoCollection)
 			{
-				_drive.Id++; 
+				_drive.Id =+ 1;
 				_drive.Name = driveItem.Name;
 				_drive.FreeSpace = Convert.ToInt32(driveItem.AvailableFreeSpace);
 				_driveList.Add(_drive);
