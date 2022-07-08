@@ -11,20 +11,24 @@ namespace Game.InstallationLibrary.Location
 	public class FolderHandler
 	{
 		private readonly IFileSystemHelper _fileSystemHelper;
+		private readonly IDriveHandler _driveHandler;
 
-		public FolderHandler(IFileSystemHelper fileSystemHelper)
+		public FolderHandler(IFileSystemHelper fileSystemHelper, IDriveHandler driveHandler)
 		{
 			_fileSystemHelper = fileSystemHelper;
+			_driveHandler = driveHandler;
 		}
 
 		private IFileSystem _fileSystem;
-		private Folder _folder = new Folder();
-		private List<Folder> _foldersList = new List<Folder>();
+		
 		private string _installationDrive;
 		
-		private List<Folder> GetFolderList()
+		public void Create(Folder folder)
 		{
-			throw new NotImplementedException();
+			_fileSystem = _fileSystemHelper.SystemInitialize();
+			_installationDrive = _driveHandler.GetDefaultDriveName();
+			_fileSystem.Directory.CreateDirectory(_installationDrive + folder.Name);
+
 		}
 			
 
